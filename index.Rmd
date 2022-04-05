@@ -16,7 +16,9 @@ The new project will include four files.
 - `*.Rproj` is file holding information about the Rstudio project itself.
 
 
-See other pages on the navigation bar for more details
+See other pages on the navigation bar for more details.
+
+**Important**: Once the project folder is created, go to the `_site.yml` file and add `output_dir: "."` to the top! Otherwise the website will be build inside a wrong folder and won't be easily publishable.
 
 # Website deployment
 

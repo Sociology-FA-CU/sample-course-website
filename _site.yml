@@ -1,4 +1,5 @@
 name: "Sample Course Website"
+output_dir: "."
 navbar:
   title: "Sample Course Website"
   left:

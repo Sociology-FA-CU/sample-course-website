@@ -4,6 +4,8 @@ title: "Website Structure"
 
 The general structure of the website is set through the `_site.yml` file. Note that this file is very particular about indentation, so count your spaces. See the `_site.yml` of this webpage for examples for examples.
 
+**Important**: Once the project folder is created, go to the `_site.yml` file and add `output_dir: "."` to the top! Otherwise the website will be build inside a wrong folder and won't be easily publishable.
+
 ## Navigation bar
 
 Firstly, you can set the name of the website of the website using the `name` argument. Secondly, you can customize the navigation bar using arguments nested in the `navbar` argument. Using the `left` argument, you can start filling the navigation bar from the left side. A new entry can be added by the combination of `- text` and `href` arguments.The `href` argument should (has to) point towards a html file in the root directory. Use `right` to start filling the navigation bar from the right side.
