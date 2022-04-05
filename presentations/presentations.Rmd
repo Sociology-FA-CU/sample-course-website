@@ -1,0 +1,19 @@
+---
+title: "ioslides Presentations"
+output:
+  ioslides_presentation:
+    widescreen: true
+css: "../css/slides-style.css"
+---
+
+## HTML presentations
+
+- You can create html presentations that can be viewed without downloading a local copy. There many ways to do it, most of our courses are using [ioslides](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html).
+- Do not store .Rmd files for presentations in the root folder, or Rmarkdown will force them to be a normal html webpage. Create a custom folder for them.
+
+## Customizing ioslides
+
+- ioslides presentation can be somewhat customized using YAML, but more extensive changes require CSS.
+- CSS file can be linked in the YAML of the .Rmd file (see the .Rmd document for this presentation)
+
+

@@ -2,8 +2,26 @@
 title: "My Website"
 ---
 
-Hello, Website!
+This is a template for creating course websites at our department.
 
-For more information about simple R Markdown websites, please read the documentation at https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html.
+The easiest way to create a new website is to create a new Rstudio project, using the Simple Rmarkdown Website template (New project -> New directory -> Simple Rmarkdown Website).
 
-Please also note that simple R Markdown sites are _not_ based on **blogdown**. They are probably good for websites with only a few Rmd documents. For larger-scale and more sophisticated websites (such as blogs), you may want to use **blogdown** instead: https://github.com/rstudio/blogdown.
+# Project structure
+
+The new project will include four files.
+
+- `_site.yml` is used to set the the overall structure of the website, such as header, theme, font, etc.
+- `index.Rmd` will when knitted create the landing page for the website. It has to be named index.Rmd.
+- `about.Rmd` is a sample page and can be deleted.
+- `*.Rproj` is file holding information about the Rstudio project itself.
+
+
+See other pages on the navigation bar for more details
+
+# Website deployment
+
+Once the website is ready, click the *Build Website* button under the the *build* tab in Rstudio (close to the *Environment* tab, where you normally see your imported data, etc.). Make sure all .Rmd file are saved first. All .Rmd files in the root directory will be knitted and the site will be build for you.
+
+Note that you will have to rebuild the site every time you change the navigation bar or otherwise change `_site.yml`. If you are only changing content of an existing page (i.e. an existing .Rmd file), you don't have to rebuild the site, just knit the specific file.
+
+After the website is build, push it to Github. Then go to the website repository and navigate to *Settings* -> *Pages*. There, under the source header, choose which branch of the repository should be published (usually main) and click save. Github should tell you the adress of you new website, e.g. *"Your site is ready to be published at https://sociology-fa-cu.github.io/sample-course-website/"*

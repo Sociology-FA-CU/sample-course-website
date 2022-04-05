@@ -1,0 +1,24 @@
+---
+title: "Website Structure"
+---
+
+The general structure of the website is set through the `_site.yml` file. Note that this file is very particular about indentation, so count your spaces. See the `_site.yml` of this webpage for examples for examples.
+
+## Navigation bar
+
+Firstly, you can set the name of the website of the website using the `name` argument. Secondly, you can customize the navigation bar using arguments nested in the `navbar` argument. Using the `left` argument, you can start filling the navigation bar from the left side. A new entry can be added by the combination of `- text` and `href` arguments.The `href` argument should (has to) point towards a html file in the root directory. Use `right` to start filling the navigation bar from the right side.
+
+
+To create a rolldown menu, replace `href` with `menu:`. Then, you can add more links using the classic combination of `text` and `href`. Note that these have to be nested inside the `menu` argument. You can also use premade [Font Awesome icons](https://fontawesome.com/icons) instead of text for links, e.g. `icon: fa-github` (note the lack of quotation marks).
+
+## Output options
+
+You can use `_site.yml` to customize the website appearance without using CSS. At the end of the file, note the `html_document` nested inside the `output` argument. Through it you can set a predefined [bootswatch theme](https://bootswatch.com) using the `theme` argument (all courses are currenly using *united*). You can change colors of various parts of the website, e.g. the color of the banner can be changed using the `primary` argument, which accepts hex codes. For more options, see the [manual](https://getbootstrap.com/docs/5.0/customize/color/). You can also use custom fonts using arguments like `heading_font` or `base_font`.
+
+
+Inside the `output` (and on the same level as `html_document`) you can include footer using the `after_body` arugment. Note that footer is its own html file in the root folder.
+
+
+## bslib package
+
+You can also try using the [bslib](https://rstudio.github.io/bslib/index.html) package to customize the website straight from R, though none of the current courses are using it.

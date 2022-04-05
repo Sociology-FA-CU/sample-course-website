@@ -1,8 +1,30 @@
-name: "my-website"
+name: "Sample Course Website"
 navbar:
-  title: "My Website"
+  title: "Sample Course Website"
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Website structure"
+      href: website-structure.html
+    - text: "Common elements"
+      menu:
+        - text: "Tabsets and rolling windows"
+          href: tabsets-windows.html
+        - text: "Presentations"
+          href: presentations/presentations.html
+  right:
+    - icon: fa-github
+      href: https://github.com/Sociology-FA-CU/sample-course-website/
+output:
+  html_document:
+    theme:
+      bootswatch: united
+      primary: "#BB5C37"
+      heading_font:
+        google: "Fira Sans"
+      base_font:
+        google: "Fira Sans"
+      code_font:
+        google: "Fira Code"
+    include:
+      after_body: footer.html

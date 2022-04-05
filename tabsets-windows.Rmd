@@ -1,0 +1,29 @@
+---
+title: "Tabsets and rolling windows"
+---
+
+Can be sometimes useful for homework and other text that should be show conditionally.
+
+## Tabsets {.tabset .tabset-pills}
+
+### Creating tabsets
+
+You can create tabsets from Rmarkdown using `## Your-title {.tabset}` as a header. All headers of lower order (e.g. `###`) will be organized into tabs.
+
+### Customizing tabsets
+
+You can use `{.tabset .tabset-pills}` to make the tabs arguably prettier. For more info, see [Rmarkdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html).
+
+
+## Rolling windows
+
+To hide some text (e.g. homework solution) until a botton is clicked, use the following HTML code.
+
+
+<details><summary>Show HTML code</summary>
+
+Create a rolling window by using 
+
+`<details><summary>Title</summary> Hidden text here </details>`
+
+</details>
